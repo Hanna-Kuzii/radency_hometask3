@@ -26,13 +26,13 @@
 The server should be up and running at `http://localhost:3000`.
 
 ## Endpoints
-- **POST /notes:** Create a new note. Request body should include properties for name, icon, created, category, content, and dates.
+- **POST /notes:** Create a new note. The request body should include properties for name, icon, created, category, content, and dates.
 - **DELETE /notes/:id:** Delete a note by ID.
-- **PATCH /notes/:id:** Edit an existing note by ID. Request body should include the updated properties.
+- **PATCH /notes/:id:** Edit an existing note by ID. The request body should include the updated properties.
 - **GET /notes/:id:** Retrieve a specific note by ID.
 - **GET /notes/active:** Retrieve active notes (both active and archived).
 - **GET /notes/archive:** Retrieve archive notes (both active and archived).
 - **GET /notes:** Retrieve all notes (both active and archived).
 - **GET /notes/stats:** Get aggregated data statistics (not implemented in this version).
-- **PATCH /notes/:id/archive:** Archive a note, moving it from the active notes list to the archive notes list.
-- **PATCH /notes/:id/unarchive:** Unarchive a note, moving it from the archive notes list back to the active notes list.
+- **PATCH /notes/:id:/archive:** Archive a note, moving it from the active notes list to the archive notes list.
+- **PATCH /notes/:id:/unarchive:** Unarchive a note, moving it from the archive notes list back to the active notes list.
